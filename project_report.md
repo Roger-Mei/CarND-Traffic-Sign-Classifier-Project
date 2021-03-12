@@ -1,9 +1,6 @@
 # **Traffic Sign Recognition** 
 
-## Writeup
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
+## Project Report
 ---
 
 **Build a Traffic Sign Recognition Project**
@@ -100,9 +97,9 @@ To train the model, I used an ....
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 0.979
+* training set accuracy of 0.998
 * validation set accuracy of 0.979
-* test set accuracy of 1.0
+* test set accuracy of 0.890
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -133,11 +130,11 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Turn left ahead     		| Turn left ahead   									| 
+| Priority Road     			| Priority Road										|
+| Speed limit(30km/h)					| Speed limit(30km/h)							|
+| right of way at the next intersection      		|  right of way at the next intersection 				|
+| Go straight or right			| Go straight or right						|
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
