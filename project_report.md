@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./report_images/data_su.png "Visualization"
+[image1]: ./report_images/data_summery.png "Visualization"
 [image2]: ./report_images/gray_scale.png "Grayscaling"
 [image3]: ./report_images/normalization.png "Normalization"
 [image4]: ./report_images/test_data.png "test data"
