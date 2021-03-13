@@ -137,7 +137,7 @@ Here are five German traffic signs that I found on the web:
 
 ![alt text][image4] 
 
-The first image might be difficult to classify because ...
+The first image might be difficult to classify because the traffic sign color is similar to its background and when we subsample the image size into `32x32x3`, the boundary of this borad is mostly blurred. Also there are chances that if the light in the image is too dark or too bright, it will also increase the difficulty of detection out of the similar reason. Another case (not listed in the selected images) is that the traffic sign is partly covered by obstacles like trees. This will change the pattern of the traffic sign and also might lead to misdetection.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
