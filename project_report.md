@@ -92,7 +92,11 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an ....
+To train the model, I finally adopted the hyperparameters as followings:
+* Optimizer = Adam
+* Epoch number = 30 
+* Batch size = 100
+* learnning rate = 0.0005
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
@@ -112,7 +116,18 @@ If a well known architecture was chosen:
 * What architecture was chosen?
 * Why did you believe it would be relevant to the traffic sign application?
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+
+I choose the LeNet-5 architecture as my training model. 
+
+The reason why I believe it is relevant to the traffic sign application is that the traffic signs are usually have specific and dominant features and patterns with relative low complexity. Different from most other CNNs which always sacrifice more resources and complicated network model development while pursuing higher performance, LeNet-5 could achieve the same purpose with a lower complexity. 
+
+Here I will brief discuss how I find the best solution by tuning hyper parameters:
+First, I set `EPOCHS = 30`, `BATCH_SIZE = 128`, `RATE = 0.001`. With training process moving forward, the accuracy is keep increasing, but the best performance is just arround 85%. Hence, for next step, I decided to adjust `EPOCHS = 60`, but just found that the best performance barely increased 2%. This made me think of that the learning rate might be too large, so I adjusted the learning rate to be `RATE = 0.0005` and the performance increased dramatically to 94%. At last, I adjusted the `BATCH_SIZE = 100`, with the assumption that the smaller the batch size is, the more training iterations in one training epoch and it is similar to adding more stochasticity into the optimizer during its gradient descent. And this drived me to the final optimal performance.
+
+There are several aspects to justify the validity of the model:
+* The accuracies of training set and validation set are pretty close to each other
+* The error of accuracy betwen training set and test set is less than 0.1
+
 
 ### Test a Model on New Images
 
